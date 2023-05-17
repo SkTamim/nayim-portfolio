@@ -1,0 +1,84 @@
+/*
+COLORS --
+    Primary Color - #FFBE00
+    BG Color - #010101
+
+*/
+/* VARIABLES */
+:root {
+	--color-main: #ffbe00;
+	--color-second: #010101;
+	--color-white: #f1efef;
+}
+
+/* ========== GENERAL STYLES ============ */
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--color-second);
+	color: var(--color-white);
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* ================= NAVBAR START ==================  */
+.header_section {
+	background: url(../images/hero-bg-m.jpg) center center/cover;
+}
+.header_section::after {
+	content: "";
+	background-color: rgba(1, 1, 1, 0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.nav_logo {
+	height: 40px;
+}
+.nav-link.active {
+	color: var(--color-main) !important;
+}
+.nav-link {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar {
+	z-index: 2;
+}
+/* ================= NAVBAR END ==================  */
+
+/* <!-- ================ HERO SECTION START ==============  --> */
+.hero_section {
+	z-index: 3;
+	position: relative;
+	height: 80vh;
+}
+.intro_box p {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+.intro_box span:first-child {
+	display: block;
+	font-size: 5rem;
+}
+.intro_box span:last-child {
+	display: block;
+	font-size: 3rem;
+}
+/* <!-- ================ HERO SECTION END ==============  --> */
+
+/* UTILITY CLASSES */
+.color_main {
+	color: var(--color-main);
+}
+img {
+	max-width: 100%;
+}
