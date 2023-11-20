@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <title>Nayim's Creation</title>
 
     <!-- GOOGLE FONT CDN  -->
@@ -21,21 +22,24 @@
 
     <!-- CUSTOM CSS FILE  -->
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
 
     <!-- CUSTOM JS FILE -->
-    <script src="assets/js/main.js"></script>
+    <script defer src="assets/js/main.js"></script>
 </head>
 
 <body>
     <!-- ================ NAVBAR START ===================  -->
-    <header class="header_section">
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
-            <div class="container">
+    <header class="header_section pb-5 px-sm-4 px-2">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark position-relative">
+            <div class="container-lg">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/new-logo.png" alt="Logo image" class="nav_logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler shadow-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="custom_togle_icon">
+                        <div class="icon_bar"></div>
+                    </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -59,24 +63,24 @@
 
 
         <!-- ================ HERO SECTION START ==============  -->
-        <section class="hero_section container">
+        <section class="hero_section container-lg mt-5">
             <div class="row h-100 align-items-center">
                 <div class="col-md-8 intro_box">
                     <h4 class="m-0">Hey 👋</h4>
-                    <h1>
+                    <h1 class="mt-2">
                         <span class="color_main">I'm Nayim</span>
                         <span>A Jewellery CAD Designer</span>
                     </h1>
-                    <p class="self_description">
+                    <p class="self_description mt-3 pe-lg-5 me-lg-5">
                         I have been designing jewelry for very long. So, I know exactly how these things works and I can do your design nicely and perfectly.
                     </p>
-                    <a href="#" class="btn main_btn hero_btn">
+                    <a href="#" class="btn main_btn hero_btn mt-3">
                         Massage me
                         <i class="bi bi-whatsapp ms-2"></i>
                     </a>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 mt-md-0 mt-4">
                     <img src="./assets/images/Jewellery-Ring.png" alt="Jewellery">
 
                 </div>

@@ -1,0 +1,20 @@
+@media screen and (max-width: 555px) {
+	.intro_box h4 {
+		font-size: 1.2rem;
+	}
+	.intro_box span:first-child {
+		font-size: 3rem;
+	}
+	.intro_box span:last-child {
+		font-size: 2rem;
+	}
+	.self_description {
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	#navbarSupportedContent {
+		background-color: var(--color-second);
+		padding: 8px 16px;
+	}
+}
