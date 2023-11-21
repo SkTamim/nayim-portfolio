@@ -272,6 +272,49 @@ body {
 }
 /* =========== SERVICES SECTION END =============== */
 
+/* =========== CONTACT SECTION START =============== */
+.contact_form .input-group-text,
+.contact_form input,
+.contact_form input:focus,
+.contact_form textarea,
+.contact_form textarea:focus {
+	background-color: #b6d3e9;
+	color: var(--color-second);
+	font-size: 18px;
+}
+.contact_form .input-group-text {
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	font-size: 25px;
+}
+
+.contact_form input {
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.btn_submit {
+	width: 100%;
+	background-color: rgb(91, 152, 199);
+	color: var(--color-second);
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 50px;
+	padding: 10px;
+}
+.btn_submit:hover {
+	background-color: #398dcd;
+	color: var(--color-second);
+}
+.bg_area {
+	background-image: url(../images/blob.svg);
+	background-size: cover;
+}
+/* =========== CONTACT SECTION END =============== */
+/* FOOTER */
+.footer_section {
+	background-color: #232020;
+}
+
 /* COMPONENTS */
 .main_btn {
 	background-color: var(--color-main);
@@ -292,4 +335,8 @@ img {
 }
 .text-14 {
 	font-size: 14px;
+}
+input,
+textarea {
+	box-shadow: none !important;
 }
