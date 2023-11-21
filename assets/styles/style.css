@@ -198,6 +198,80 @@ body {
 }
 /* =========== PORTFOLIO SECTION END =============== */
 
+/* =========== SERVICES SECTION START =============== */
+.services_section {
+	background-color: var(--color-main);
+	padding-bottom: 100px;
+}
+.service_card_container {
+	margin-top: 70px;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	justify-content: center;
+	align-content: space-around;
+}
+.service_card_container_2 {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+}
+
+.service_card {
+	transform: rotate(315deg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	text-align: center;
+}
+.service_card_outer {
+	background-color: var(--color-white);
+	color: var(--color-second);
+	max-width: min-content;
+	border-radius: 10px;
+	transform: rotate(45deg);
+
+	margin: 20px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.service_card_container_2 .service_card_outer:nth-child(1) {
+	position: relative;
+	left: 94px;
+}
+.service_card_container_2 .service_card_outer:nth-child(2) {
+	position: relative;
+	left: -94px;
+}
+
+.service_img {
+	height: 60px;
+}
+.service_btn {
+	color: var(--color-second);
+	border: 1px solid var(--color-second);
+	border-radius: 50px;
+	padding: 5px 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+}
+.service_btn:hover {
+	color: rgb(79, 136, 243);
+	border-color: rgb(79, 136, 243);
+}
+.services_section .col-lg-4 {
+	display: flex;
+	justify-content: center;
+}
+/* =========== SERVICES SECTION END =============== */
+
 /* COMPONENTS */
 .main_btn {
 	background-color: var(--color-main);
@@ -215,4 +289,7 @@ body {
 }
 img {
 	max-width: 100%;
+}
+.text-14 {
+	font-size: 14px;
 }
