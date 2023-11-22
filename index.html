@@ -31,10 +31,10 @@
     <script defer src="assets/js/main.js"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- ================ NAVBAR START ===================  -->
     <header class="header_section pb-5 px-sm-4 px-2">
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark position-relative">
+        <nav class="navbar navbar-expand-lg  navbar-dark " id="navbar-example2">
             <div class="container-lg">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/new-logo.png" alt="Logo image" class="nav_logo">
@@ -47,16 +47,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">My Works</a>
+                            <a class="nav-link" href="#works">My Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">My Services</a>
+                            <a class="nav-link" href="#services">My Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="#contact">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@
 
 
         <!-- ================ HERO SECTION START ==============  -->
-        <section class="hero_section container-lg mt-5">
+        <section class="hero_section container-lg mt-5" id="home">
             <div class="row h-100 align-items-center">
                 <div class="col-md-8 intro_box">
                     <h4 class="m-0">Hey 👋</h4>
@@ -95,7 +95,7 @@
 
 
     <!--=================== PORTFOLIO SECTION START =================== -->
-    <section class="portfolio_section my-5 container-lg px-lg-0 px-4">
+    <section class="portfolio_section my-5 container-lg px-lg-0 px-4" id="works">
         <h1 class="text-center">My Recent Works</h1>
 
         <div class="portfolio_wrap row mt-4 g-3 justify-content-center spotlight-group" data-infinite="true">
@@ -147,7 +147,7 @@
 
 
     <!--=================== SERVICES SECTION START =================== -->
-    <section class="services_section pt-5">
+    <section class="services_section pt-5" id="services">
         <div class="container-lg">
             <h1 class="text-center text-dark">SERVICES</h1>
 
@@ -229,7 +229,7 @@
 
 
     <!--=================== CONTACT SECTION START =================== -->
-    <section class="contact_section container-lg my-5">
+    <section class="contact_section container-lg my-5" id="contact">
         <div class="row">
             <div class="col-md-6">
                 <h2 class="">Contact Me</h2>
@@ -263,6 +263,12 @@
     <footer class="footer_section py-2 px-3 text-center text-14">
         &copy; 2023 all right reserved.
     </footer>
+
+    <div class="page_progress">
+        <div class="back_to_top">
+            <i class="bi bi-chevron-up"></i>
+        </div>
+    </div>
 
 </body>
 

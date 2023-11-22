@@ -54,7 +54,18 @@ body {
 	font-weight: 500;
 }
 .navbar {
-	z-index: 2;
+	z-index: 9;
+	transition: 0.5s;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+}
+.navbar.sticky {
+	position: fixed;
+	background-color: #010101;
+	padding: 10px 0;
 }
 .custom_togle_icon {
 	position: relative;
@@ -313,6 +324,51 @@ body {
 /* FOOTER */
 .footer_section {
 	background-color: #232020;
+}
+
+.back_to_top {
+	background-color: var(--color-white);
+	width: 50px;
+	height: 50px;
+	display: grid;
+	place-items: center;
+
+	color: var(--color-second);
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.page_progress {
+	--progress-percent: 0%;
+	width: 60px;
+	height: 60px;
+	z-index: 1000;
+
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+	transition: 0.8s;
+
+	background-image: conic-gradient(
+		#398dcd var(--progress-percent),
+		transparent 0%
+	);
+}
+.page_progress.show {
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+	z-index: 2;
 }
 
 /* COMPONENTS */
