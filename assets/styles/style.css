@@ -320,6 +320,10 @@ body {
 	background-image: url(../images/blob.svg);
 	background-size: cover;
 }
+.right_image {
+	height: 100px;
+	margin: 10px 0;
+}
 /* =========== CONTACT SECTION END =============== */
 /* FOOTER */
 .footer_section {

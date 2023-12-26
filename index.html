@@ -27,13 +27,17 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/responsive.css">
 
+    <!-- EMAIL JS CDN -->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
     <!-- CUSTOM JS FILE -->
     <script defer src="assets/js/main.js"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" id="smooth-wrapper">
     <!-- ================ NAVBAR START ===================  -->
-    <header class="header_section pb-5 px-sm-4 px-2">
+    <header class="header_section pb-5 px-sm-4 px-2" id="smooth-content">
         <nav class="navbar navbar-expand-lg  navbar-dark " id="navbar-example2">
             <div class="container-lg">
                 <a class="navbar-brand" href="#">
@@ -95,7 +99,7 @@
 
 
     <!--=================== PORTFOLIO SECTION START =================== -->
-    <section class="portfolio_section my-5 container-lg px-lg-0 px-4" id="works">
+    <section class="portfolio_section my-5 container-lg px-lg-0 px-4" id="works smooth-content">
         <h1 class="text-center">My Recent Works</h1>
 
         <div class="portfolio_wrap row mt-4 g-3 justify-content-center spotlight-group" data-infinite="true">
@@ -236,20 +240,20 @@
 
                 <form class="mt-4 contact_form">
                     <div class="input-group mb-3">
-                        <span class="input-group-text pe-0" id="name">
+                        <span class="input-group-text pe-0">
                             <i class="bi bi-person-fill text-muted"></i>
                         </span>
-                        <input type="text" class="form-control border-start-0" placeholder="Enter your name" aria-label="Name" aria-describedby="name">
+                        <input type="text" class="form-control border-start-0" placeholder="Enter your name" aria-label="Name" aria-describedby="name" id="name" required>
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text pe-0" id="email">
+                        <span class="input-group-text pe-0">
                             <i class="bi bi-envelope-fill text-muted"></i>
                         </span>
-                        <input type="email" class="form-control border-start-0" placeholder="Enter your email" aria-label="email" aria-describedby="email">
+                        <input type="email" class="form-control border-start-0" placeholder="Enter your email" aria-label="email" aria-describedby="email" id="email" required>
                     </div>
-                    <textarea class="form-control mb-3" placeholder="Enter your massege" rows="6"></textarea>
+                    <textarea class="form-control mb-3" placeholder="Enter your massege" rows="6" id="massege" required></textarea>
 
-                    <button class="btn btn_submit  ">Send Massege</button>
+                    <button class="btn btn_submit" id="send_btn" type="submit">Send Massege</button>
                 </form>
             </div>
             <div class="col-md-6 bg_area">
@@ -257,6 +261,43 @@
             </div>
         </div>
     </section>
+
+    <!-- FORM SUBMITTED MODAL -->
+    <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="assets/images/right.gif" alt="right" class="right_image">
+                    </div>
+
+                    <h5 class="text-dark text-center">Your message has been submitted successfully.</h5>
+
+                    <div class="text-end mt-4">
+                        <button type="button" class="main_btn btn px-4 fw-bold" data-bs-dismiss="modal">Okey</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM SUBMIT ERROR MODAL -->
+    <div class="modal fade" id="submitError" tabindex="-1" aria-labelledby="submitErrorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <h5 class="text-dark text-center" id="errorMassegeArea"></h5>
+
+                    <div class="text-end mt-4">
+                        <button type="button" class="main_btn btn px-4 fw-bold" data-bs-dismiss="modal">Okey</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--=================== CONTACT SECTION END =================== -->
 
     <!-- FOOTER -->
